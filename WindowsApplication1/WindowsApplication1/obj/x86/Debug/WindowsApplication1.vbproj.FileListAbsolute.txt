@@ -1,0 +1,9 @@
+D:\Eleni Doc\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+D:\Eleni Doc\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+D:\Eleni Doc\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+D:\Eleni Doc\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\Eleni Doc\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\Eleni Doc\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+D:\Eleni Doc\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+D:\Eleni Doc\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+D:\Eleni Doc\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb

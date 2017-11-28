@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portali</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <style>
+      .card {
+      position: relative;
+      background: #ffffff;
+      border-radius: 5px;
+      padding: 60px 0 40px 0;
+      box-sizing: border-box;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+    }
+    .card:first-child {
+      background: #fafafa;
+      height: 10px;
+      border-radius: 5px 5px 0 0;
+      margin: 0 10px;
+      padding: 0;
+    }
+    .card .title {
+      position: relative;
+      z-index: 1;
+      border-left: 5px solid #ed2553;
+      margin: 0 0 35px;
+      padding: 10px 0 10px 50px;
+      color: #ed2553;
+      font-size: 32px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .card .input-container {
+      position: relative;
+      margin: 0 60px 50px;
+    }
+    .card .input-container input {
+      outline: none;
+      z-index: 1;
+      position: relative;
+      background: none;
+      width: 100%;
+      height: 60px;
+      border: 0;
+      color: #212121;
+      font-size: 24px;
+      font-weight: 400;
+    }
+    .card .input-container input:focus ~ label {
+      color: #9d9d9d;
+      -webkit-transform: translate(-12%, -50%) scale(0.75);
+              transform: translate(-12%, -50%) scale(0.75);
+    }
+    .card .input-container input:focus ~ .bar:before, .card .input-container input:focus ~ .bar:after {
+      width: 50%;
+    }
+    .card .input-container input:valid ~ label {
+      color: #9d9d9d;
+      -webkit-transform: translate(-12%, -50%) scale(0.75);
+              transform: translate(-12%, -50%) scale(0.75);
+    }
+    .card .input-container label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #757575;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 60px;
+      -webkit-transition: 0.2s ease;
+      transition: 0.2s ease;
+    }
+
+
+    .card .button-container {
+      margin: 0 60px;
+      text-align: center;
+    }
+    .card .button-container button {
+      outline: 0;
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      background: 0;
+      width: 240px;
+      border: 2px solid #e3e3e3;
+      padding: 20px 0;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+      overflow: hidden;
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+    }
+    .card .button-container button span {
+      position: relative;
+      z-index: 1;
+      color: #ddd;
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+    }
+
+    .card .button-container button:hover, .card .button-container button:active, .card .button-container button:focus {
+      border-color: #ed2553;
+    }
+    .card .button-container button:hover span, .card .button-container button:active span, .card .button-container button:focus span {
+      color: #ed2553;
+    }
+    .card .button-container button:active span, .card .button-container button:focus span {
+      color: #ffffff;
+    }
+    .card .button-container button:active:before, .card .button-container button:focus:before {
+      opacity: 1;
+      -webkit-transform: scale(10);
+      transform: scale(10);
+    }
+
+    /* Keyframes */
+    @-webkit-keyframes buttonFadeInUp {
+      0% {
+        bottom: 30px;
+        opacity: 0;
+      }
+    }
+
+    /* Tabela */
+      
+    table{
+    width:100%;
+    table-layout: fixed;
+  }
+  .tbl-header{
+    background-color: rgba(255,255,255,0.3);
+   }
+  .tbl-content{
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  th{
+    padding: 20px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+  }
+
+
+  /* demo styles */
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+  
+  
+
+
+
+  /* for custom scrollbar for webkit browser*/
+
+  ::-webkit-scrollbar {
+      width: 6px;
+  } 
+  ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  } 
+  ::-webkit-scrollbar-thumb {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  }
+    </style>
+
+
+
+
+    <script>
+       $(document).ready(function () {
+       $('.nav-toggle').click(function () {
+        var collapse_content_selector = $(this).attr('href');
+        var toggle_switch = $(this);
+        $(collapse_content_selector).toggle(function () {
+            if ($(this).css('display') == 'none') {
+                toggle_switch.html('Show');
+            } else {
+                toggle_switch.html('Hide');
+            }
+        });
+    });
+    });
+    </script>
+
+
+
+
+
+
+  </head>
+
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+       
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#admin" ><i class="fa fa-user"></i> Admin<b class="caret">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Mireseerdhet ne portalin tuaj</h1>
+              <p class="intro-text">Per t'u aksesuar, vazhdoni si me poshte </p>
+              <a href="#identifikohu" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <!-- Identifikohu Section -->
+    <section id="identifikohu" class=" ">
+      <div class="container" style=" position: relative; max-width: 460px;
+  width: 100%;
+  margin: 0 auto 100px;">
+      <div class="card"></div>
+      <div class="card">
+      <h1 class="title">Login</h1>
+      <form>
+        <div class="input-container">
+          <input type="#{type}" id="#{label}" required="required"/>
+          <label for="#{label}"> Student ID</label>
+          <div class="bar"></div>
+          <div class="button-container">
+            <button href="#collapse" class="nav-toggle"><span>Identifikohu</span></button>
+          </div>
+        </div>
+      </form>
+    </section> 
+
+
+    <!-- Rezultatet Section -->
+    <section style=" margin: 130px; background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    font-family: 'Roboto', sans-serif;" >
+    <div class="tbl-header" id="collapse" style="display:none;">
+      <table cellpadding="0" cellspacing="0" border="0" id="person">
+        <thead>
+          <tr>
+            <th>Student ID</th>
+            <th>Emri</th>
+            <th>Mbiemri</th>
+            <th>Lenda </th>
+            <th>Oret </th>
+            <th> Kreditet </th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="tbl-content" id="collapse" style="display:none;">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+          <tr>
+            <td> -- </td> 
+            <td>-- </td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td> -- </td> 
+            <td>-- </td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+</section>
+
+    
+
+    
+  </body>
+
+</html>
